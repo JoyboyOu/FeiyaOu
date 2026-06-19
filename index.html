@@ -1,52 +1,183 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Feiya Ou</title>
-  <meta name="description" content="Feiya Ou — Immunology PhD at WashU. Neuroimmunology, enhancer biology, and transcriptional regulation.">
+
   <style>
-    /* Minimal, readable, no frameworks */
-    :root{
-      --fg:#222; --bg:#fff; --muted:#555; --link:#0645ad; --max:820px; --border:#e6e6e6
+    :root {
+      --fg: #222;
+      --bg: #fff;
+      --muted: #555;
+      --link: #0645ad;
+      --max: 820px;
+      --border: #e6e6e6;
     }
-    *{box-sizing:border-box}
-    html{font-size:16px}
-    body{margin:0; color:var(--fg); background:var(--bg); font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height:1.6}
-    .wrap{max-width:var(--max); margin:0 auto; padding:24px}
-    header{padding:28px 0 8px; border-bottom:1px solid var(--border)}
-    h1{font-size:1.9rem; margin:.2rem 0}
-    .tag{color:var(--muted); margin:.2rem 0 .6rem}
-    .avatar{width:200px; height:200px; border-radius:50%; object-fit:cover; border:1px solid var(--border)}
-    nav{display:flex; gap:14px; flex-wrap:wrap; margin:.4rem 0 1rem}
-    nav a{color:var(--link); text-decoration:none; padding:.2rem .4rem; border-radius:6px}
-    nav a:hover{background:#f5f5f5}
-    main section{padding:18px 0; border-bottom:1px solid var(--border)}
-    h2{font-size:1.25rem; margin:0 0 .6rem}
-    h3{font-size:1rem; margin:.8rem 0 .2rem}
-    ul{margin:.4rem 0 .8rem 1.2rem}
-    li{margin:.28rem 0}
-    a{color:var(--link)}
-    .muted{color:var(--muted)}
-    .small{font-size:.95rem}
-    footer{padding:18px 0; color:var(--muted)}
-    /* Mobile niceties */
-    @media (max-width:520px){
-      .wrap{padding:18px}
-      nav{gap:10px}
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--fg);
+      background: var(--bg);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    header {
+      padding: 28px 0 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .top {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      margin-bottom: 12px;
+    }
+
+    .avatar {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin: 0.2rem 0;
+    }
+
+    .tag {
+      color: var(--muted);
+      margin: 0.2rem 0 0.6rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin: 0.4rem 0 1rem;
+    }
+
+    nav a {
+      color: var(--link);
+      text-decoration: none;
+      padding: 0.2rem 0.4rem;
+      border-radius: 6px;
+    }
+
+    nav a:hover {
+      background: #f5f5f5;
+    }
+
+    main section {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.6rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+      margin: 0.8rem 0 0.2rem;
+    }
+
+    ul {
+      margin: 0.4rem 0 0.8rem 1.2rem;
+    }
+
+    li {
+      margin: 0.28rem 0;
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .small {
+      font-size: 0.95rem;
+    }
+
+    .diagram {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 16px 0 0;
+    }
+
+    footer {
+      padding: 18px 0;
+      color: var(--muted);
+    }
+
+    @media (max-width: 520px) {
+      .wrap {
+        padding: 18px;
+      }
+
+      .top {
+        align-items: flex-start;
+      }
+
+      .avatar {
+        width: 120px;
+        height: 120px;
+      }
+
+      nav {
+        gap: 10px;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <header>
       <div class="top">
-        <img class="avatar" src="Feiya_Ou_photo.png" alt="Portrait of Feiya Ou" />
+        <img
+          class="avatar"
+          src="Feiya_Ou_photo_320.png"
+          alt="Portrait of Feiya Ou"
+          width="200"
+          height="200"
+          fetchpriority="high"
+        >
+
         <div>
           <h1>Feiya Ou (欧非亚)</h1>
-          <div class="tag small">I'm an Immunology PhD Candidate at Washington University in St. Louis, currently interested in genetics and transcription.</div>
+          <div class="tag small">
+            I seek to uncover fundamental mechanisms of transcription and aspire
+            to become a leader at the interface of gene regulation and immunology.
+          </div>
         </div>
       </div>
+
       <nav aria-label="Primary">
         <a href="#about">About</a>
         <a href="#research">Research</a>
@@ -60,69 +191,174 @@
     <main>
       <section id="about">
         <h2>About</h2>
+
         <p>
-          I’m finishing my PhD in the Kenneth Murphy Lab at Washington University in St. Louis (WashU), where I study molecular circuits that control cell fates in the immune system, particularly the <em>Irf8</em> +32-kb enhancer in cDC1 fate commitment and the <em>Zeb2</em> -165-kb enhancer in multiple lymphoid and myeloid lineages. <strong>In 2026, I will join the Anders Hansen Lab at MIT as a postdoctoral associate to study the interplay between genome organization and transcription.</strong>
+          I joined the
+          <a href="https://www.ashansenlab.com/" target="_blank" rel="noopener">Anders Hansen Lab</a>
+          at MIT in 2026 as a postdoctoral associate, where I am studying the
+          <strong>interplay between 3D genome organization and transcription</strong>.
         </p>
+
+        <p>
+          I completed my PhD in Biology and Biomedical Science (Immunology) in
+          May 2026 under the mentorship of
+          <a href="https://pathology.wustl.edu/people/kenneth-murphy-md-phd/" target="_blank" rel="noopener">Kenneth Murphy</a>.
+          During my PhD, I studied transcriptional mechanisms that control cell
+          fates in the immune system, particularly the <em>Irf8</em> +32-kb
+          enhancer during cDC1 fate commitment and the <em>Zeb2</em> -165-kb
+          enhancer in multiple lymphoid and myeloid lineages.
+        </p>
+
         <p class="small muted">
-          Interests: molecular and physical mechanisms for enhancer-promoter contact, enhancer-promoter selectivity, enhancer switching, and silencer action.
+          Research Interests: molecular and physical mechanisms for
+          enhancer-promoter contact, enhancer-promoter selectivity, enhancer
+          switching, and silencer action.
         </p>
       </section>
 
       <section id="research">
         <h2>Research</h2>
+
         <h3>KITL/FLT3L culture system</h3>
-        <p class="small">I developed a two-step culture protocol that increases cDC1 yield ~10-fold over standard methods. (Download an FAQ document about this protocol <a href="KITL_FLT3L_culture_FAQ.pdf">here</a>)</p>
+        <p class="small">
+          I developed a two-step culture protocol that increases cDC1 yield
+          ~10-fold over standard methods.
+          <a href="Appendix_1.pdf">FAQ document</a>
+        </p>
+
         <h3><em>Irf8</em> +32-kb enhancer</h3>
-                <p class="small">I generated <em>Irf8</em> +32H/H mice, which carry an “optimized” version of the <em>Irf8</em> +32-kb enhancer featuring multiple high-affinity AICEs. These mice exhibit erroneous IRF8 autoactivation in cDC2 progenitors, cDC2 lineage redirection, and paradoxically reduced IRF8 expression in cDC1s. These problems compromise both cDC1- and cDC2-dependent arms of immunity.</p>
+        <p class="small">
+          I generated <em>Irf8</em> +32H/H mice, which carry an “optimized”
+          version of the <em>Irf8</em> +32-kb enhancer featuring multiple
+          high-affinity AICEs. These mice exhibit erroneous IRF8 autoactivation
+          in cDC2 progenitors, cDC2 lineage redirection, and paradoxically
+          reduced IRF8 expression in cDC1s. These problems compromise both
+          cDC1- and cDC2-dependent arms of immunity.
+        </p>
+
         <h3><em>Zeb2</em> -165-kb enhancer</h3>
-        <p class="small">I generated ∆E mice lacking three E-boxes in the enhancer. Revealed that E-boxes activate this enhancer in the lymphoid compartment to enable B cell and pDC development, and that E-boxes and CEBP sites together activate this same enhancer in the myeloid compartment to support cDC2 and monocyte development. Also demonstrated that ID2 secures the cDC1 fate by antagonizing E protein activity at the <em>Zeb2 enhancer</em>.</p>
-        <img class="diagram" src="Irf8_and_Zeb2.svg" alt="Diagram of enhancers"/>
+        <p class="small">
+          I generated ∆E mice lacking three E-boxes in the enhancer. E-boxes
+          activate this enhancer in the lymphoid compartment to enable B cell
+          and pDC development, whereas E-boxes and CEBP sites together activate
+          this same enhancer in the myeloid compartment to support cDC2 and
+          monocyte development. I also demonstrated that ID2 secures the cDC1
+          fate by antagonizing E protein activity at the <em>Zeb2</em> enhancer.
+        </p>
+
+        <h3>PhD Thesis</h3>
+        <p class="small">
+          <a href="https://doi.org/10.7936/c9w4-s703" target="_blank" rel="noopener">
+            Molecular Circuits in Dendritic Cell Development.
+          </a>
+          <em>Washington University in St. Louis</em>, 2026.
+          <a href="Molecular%20Circuits%20in%20Dendritic%20Cell%20Development.pdf">PDF</a>
+        </p>
+
+        <img
+          class="diagram"
+          src="chapter_5.svg"
+          alt="Diagram summarizing PhD research on dendritic cell development"
+        >
       </section>
 
       <section id="publications">
         <h2>Selected Publications</h2>
+
         <ul>
-          <li><strong>Ou, F.</strong>, et al. <em>E proteins facilitate Zeb2 expression for balanced lymphoid and myeloid development.</em> <span class="muted">Under Review.</span> <a href="https://doi.org/10.21203/rs.3.rs-7455813/v1">preprint</a></li>
-          <li><strong>Ou, F.</strong>, Murphy, KM. <em>“What’s in a name?” Clarifying the identity of RORγt+ antigen-presenting cells.</em> <span class="muted">Journal of Experimental Medicine 2025.</span> <a href="https://doi.org/10.1084/jem.20250760">journal</a></li>
-          <li>Murphy, KM., <strong>Ou, F.</strong> <em>Weak enhancer allows autoactivation of Irf8 to control cDC1 versus cDC2 lineage commitment.</em> <span class="muted">Nature Immunology 2024.</span> <a href="https://doi.org/10.1038/s41590-024-01977-9">journal</a></li>
-          <li><strong>Ou, F.</strong>, et al. <em>Optimization of the Irf8 +32-kb enhancer disrupts dendritic cell lineage segregation.</em> <span class="muted">Nature Immunology 2024.</span> <a href="https://doi.org/10.1038/s41590-024-01976-w">journal</a></li>
-          <li><strong>Ou, F.</strong>, et al. <em>Enhanced in vitro type 1 conventional dendritic cell generation via the recruitment of hematopoietic stem cells and early progenitors by Kit ligand.</em> <span class="muted">European Journal of Immunology 2023.</span> <a href="https://doi.org/10.1002/eji.202250201">journal</a></li>
+          <li>
+            <strong>Ou, F.</strong>, et al.
+            <a href="https://doi.org/10.21203/rs.3.rs-7455813/v1" target="_blank" rel="noopener">
+              E proteins facilitate Zeb2 expression for balanced lymphoid and myeloid development.
+            </a>
+            <span><em>Research Square</em> 2025. Accepted in <em>Nature Immunology</em>.</span>
+          </li>
+
+          <li>
+            <strong>Ou, F.</strong>, Murphy, K.M.
+            <a href="https://doi.org/10.1084/jem.20250760" target="_blank" rel="noopener">
+              “What’s in a name?” Clarifying the identity of RORγt+ antigen-presenting cells.
+            </a>
+            <span><em>Journal of Experimental Medicine</em> 2025.</span>
+            <a href="FOu_2025JEM_insights.pdf">PDF</a>
+          </li>
+
+          <li>
+            Murphy, K.M., <strong>Ou, F.</strong>
+            <a href="https://doi.org/10.1038/s41590-024-01977-9" target="_blank" rel="noopener">
+              Weak enhancer allows autoactivation of Irf8 to control cDC1 versus cDC2 lineage commitment.
+            </a>
+            <span><em>Nature Immunology</em> 2024.</span>
+            <a href="FOu_2024NI_briefing.pdf">PDF</a>
+          </li>
+
+          <li>
+            <strong>Ou, F.</strong>, et al.
+            <a href="https://doi.org/10.1038/s41590-024-01976-w" target="_blank" rel="noopener">
+              Optimization of the Irf8 +32-kb enhancer disrupts dendritic cell lineage segregation.
+            </a>
+            <span><em>Nature Immunology</em> 2024.</span>
+            <a href="FOu_2024NI.pdf">Main PDF</a>
+          </li>
+
+          <li>
+            <strong>Ou, F.</strong>, et al.
+            <a href="https://doi.org/10.1002/eji.202250201" target="_blank" rel="noopener">
+              Enhanced in vitro type 1 conventional dendritic cell generation via
+              the recruitment of hematopoietic stem cells and early progenitors by Kit ligand.
+            </a>
+            <span><em>European Journal of Immunology</em> 2023.</span>
+            <a href="FOu_2023EJI.pdf">Main PDF</a>
+          </li>
         </ul>
-        <p class="small">Full list on <a href="https://scholar.google.com/citations?user=Cd8V0sMAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></p>
+
+        <p class="small">
+          Full list on
+          <a href="https://scholar.google.com/citations?user=Cd8V0sMAAAAJ&hl=en" target="_blank" rel="noopener">
+            Google Scholar
+          </a>
+        </p>
       </section>
 
       <section id="cv">
         <h2>CV</h2>
-        <p class="small">Download my CV <a href="Feiya_Ou_CV_December_2025.pdf">here</a></p>
+        <p class="small">
+          Check out my CV <a href="Feiya_Ou_CV_June_2026.pdf">here</a>.
+        </p>
       </section>
 
       <section id="personal">
         <h2>Beyond the Bench</h2>
         <p class="small">
-          I grew up in Fuzhou, Fujian, China. Outside of science, I enjoy playing <em>basketball</em>, 
-          <em>bouldering</em> with my girlfriend, and exploring the fantasy world of <em>J. R. R. Tolkien</em>. 
-          For fun: my Hogwarts house is <span style="color:#7f0909">Gryffindor</span>.
+          I grew up in Fuzhou, Fujian, China. I enjoyed playing
+          <em>basketball</em> and <em>bouldering</em> with my fiancée until
+          announcing my retirement from sports in June 2026. I also enjoy
+          exploring the fantasy world of <em>J. R. R. Tolkien</em>.
+          Fun fact: my Hogwarts house is
+          <span style="color:#7f0909">Gryffindor</span>.
         </p>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
         <p class="small">
-          <a href="mailto:feiya.ou@wustl.edu">Email</a> ·
+          <a href="mailto:feiyaou@mit.edu">Email</a> ·
+          <a href="https://scholar.google.com/citations?user=Cd8V0sMAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> ·
+          <a href="https://orcid.org/0000-0001-8289-4025" target="_blank" rel="noopener">ORCID</a> ·
+          <a href="https://github.com/JoyboyOu" target="_blank" rel="noopener">GitHub</a> ·
           <a href="https://x.com/FeiyaOu1" target="_blank" rel="noopener">Twitter/X</a> ·
           <a href="https://bsky.app/profile/feiyaou.bsky.social" target="_blank" rel="noopener">Bluesky</a> ·
-          <a href="https://www.linkedin.com/in/feiya-ou-309779182/" target="_blank" rel="noopener">LinkedIn</a> ·
-          <a href="https://orcid.org/0000-0001-8289-4025" target="_blank" rel="noopener">ORCID</a> ·
-          <a href="https://github.com/JoyboyOu" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/feiya-ou-309779182" target="_blank" rel="noopener">LinkedIn</a>
         </p>
       </section>
     </main>
 
     <footer>
-      <div class="small muted">© 2025 Feiya Ou · Last meaningful website update: December 2025</div>
+      <div class="small muted">
+        © 2026 Feiya Ou · Last meaningful website update: June 2026
+      </div>
+      <p class="small"><a href="#top">Back to top ↑</a></p>
     </footer>
   </div>
-
-  <script>document.getElementById('yr').textContent = new Date().getFullYear()</script>
 </body>
 </html>
